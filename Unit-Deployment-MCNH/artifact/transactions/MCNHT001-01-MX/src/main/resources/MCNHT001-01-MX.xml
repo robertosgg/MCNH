@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="MCNHT001" application="MCNH" version="01" country="MX" language="ES">
+	<paramsIn>
+		<parameter order="1" name="entrada" mandatory="0" type="String" size="20"/>
+		<dto order="2" name="employeesIn" mandatory="0" package="com.bbva.mcnh.dto.employees.EmployeesDTO" artifactId="MCNHC001">
+			<parameter order="1" name="employeeNumber" mandatory="1" type="Long" size="10"/>
+			<parameter order="2" name="employeeName" mandatory="1" type="String" size="50"/>
+			<parameter order="3" name="employeeDepartament" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="employeeRfc" mandatory="0" type="String" size="20"/>
+			<parameter order="5" name="employeeEmail" mandatory="0" type="String" size="30"/>
+			<parameter order="6" name="employeePhone" mandatory="0" type="String" size="20"/>
+			<parameter order="7" name="employeeAddress" mandatory="0" type="String" size="20"/>
+			<parameter order="8" name="employeeRegistrationDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+			<parameter order="9" name="employeeStatus" mandatory="0" type="Long" size="10"/>
+			<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+		</dto>
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="employeesOut" mandatory="0" package="com.bbva.mcnh.dto.employees.EmployeesDTO" artifactId="MCNHC001">
+			<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+			<parameter order="2" name="employeeName" mandatory="0" type="String" size="50"/>
+			<parameter order="3" name="employeeDepartament" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="employeeRfc" mandatory="0" type="String" size="20"/>
+			<parameter order="5" name="employeeEmail" mandatory="0" type="String" size="30"/>
+			<parameter order="6" name="employeePhone" mandatory="0" type="String" size="20"/>
+			<parameter order="7" name="employeeAddress" mandatory="0" type="String" size="30"/>
+			<parameter order="8" name="employeeRegistrationDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+			<parameter order="9" name="employeeStatus" mandatory="0" type="Long" size="10"/>
+			<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+		</dto>
+		<list order="2" name="lista" mandatory="0">
+			<dto order="1" name="Type" mandatory="0" package="com.bbva.mcnh.dto.employees.EmployeesDTO" artifactId="MCNHC001">
+				<parameter order="1" name="employeeNumber" mandatory="0" type="Long" size="10"/>
+				<parameter order="2" name="employeeName" mandatory="0" type="String" size="50"/>
+				<parameter order="3" name="employeeDepartament" mandatory="0" type="String" size="50"/>
+				<parameter order="4" name="employeeRfc" mandatory="0" type="String" size="20"/>
+				<parameter order="5" name="employeeEmail" mandatory="0" type="String" size="30"/>
+				<parameter order="6" name="employeePhone" mandatory="0" type="String" size="20"/>
+				<parameter order="7" name="employeeAddress" mandatory="0" type="String" size="30"/>
+				<parameter order="8" name="employeeRegistrationDate" mandatory="0" type="Date (YYYY-MM-DD)" size="0"/>
+				<parameter order="9" name="employeeStatus" mandatory="0" type="Long" size="10"/>
+				<parameter order="10" name="salary" mandatory="0" type="Long" size="6"/>
+			</dto>
+		</list>
+	</paramsOut>
+	<description>TRX Proyecto Final APX Onliine</description>
+</transaction>
